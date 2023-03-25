@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>att1 Front</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css-all.css"/>
+    </head>
+
+    <body>
+        <div id="box1">
+            <header>
+                <h2 class="top-text">Chatting com minha Avó!</h2>
+            </header>
+
+            <div id="box2">
+                <div class="left-msg">
+                    <p class="chat-settings">Olá</p>
+                </div>
+                <div class="left-msg">
+                    <img class="img-settings" src="bomdia.jpeg" alt="Imagem de bom dia que toda avo ja mandou em algum grupo de familia">
+                </div>
+                <div class="right-msg">
+                    <p class="chat-settings">Bom dia, Vózinha!</p>
+                </div>
+                <div class="right-msg">
+                    <p class="chat-settings">Como a senhora está?</p>
+                </div>
+                <div class="left-msg">
+                    <p class="chat-settings">Ola querido</p>
+                </div>
+                <div class="left-msg">
+                    <p class="chat-settings">Vou bem e voce</p>
+                </div>
+                <div class="right-msg" id="newMessages">
+                    <p class="chat-settings">Sinto saudades!</p>
+                </div>
+            </div>
+
+            <form id="send-message-box" action="#" method="post">
+                <input type="text" id="message" name="messages" class="msg-box" placeholder="Digite aqui...">
+                <button class="button" type="submit" onclick="adicionarMsg(document.getElementById('message').value)">ENVIAR</button>
+            </form>
+            <script src="js.js"></script>
+        </div>
+    </body>
+</html>
