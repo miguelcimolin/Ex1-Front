@@ -1,7 +1,3 @@
-/*Pelo que entendi, eu devo copiar essa primeira
-parte para manter a padronizacao e evitar problemas
-de renderizacao */
-
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -36,7 +32,7 @@ img {
 
 body{
   background-color: white;
-  font-family:Verdana, Geneva, Tahoma, sans-serif; /*setando a fonte padrao */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*Separei em duas boxes*/
@@ -63,7 +59,7 @@ body{
   overflow-x: none;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: 12px auto; /* 12px em cima e embaixo; o `auto` faz com que na horizontal estejamos centralizados */
+  margin: 12px auto;
 }
 
 #send-message-box {
@@ -85,19 +81,6 @@ body{
   border-top-left-radius: 4px;
 }
 
-/*Fiz esse left-msg e right-msg pra poder alinhas os textos entre Esquerda e Direita/Receber e Enviar*/
-/*Foi a forma que encontrei de fazer acontecer :p*/
-
-.left-msg{
-  align-self: flex-start;
-  margin-left: 15px;
-}
-
-.right-msg{
-  align-self: flex-end;
-  margin-right: 15px;
-}
-
 /*configs do chat*/
 
 .chat-settings {
@@ -109,7 +92,17 @@ body{
   margin-top: 3px;
 }
 
-/*configs da img*/
+.left-msg{
+  align-self: flex-start;
+  margin-left: 15px;
+}
+
+.right-msg{
+  align-self: flex-end;
+  margin-right: 15px;
+}
+
+/*img config*/
 
 .img-settings {
   max-width: 190px;
@@ -117,17 +110,17 @@ body{
   padding-top: 4px;
 }
 
-/*configs do input*/
+/*input configs*/
 
 .msg-box {
   height: 24px;
   width: 75%;
   border-radius: 3px;
   margin-bottom: 3px;
-  outline: none; /*isso aqui e pra tirar a borda que aparece quando coloca o mouse em cima*/
+  outline: none;
 }
 
-/*configs do botao*/
+/*button configs*/
 
 .button{
   background-color: #624a37;
@@ -139,5 +132,5 @@ body{
   height: 25px;
   margin-bottom: 4px;
   margin-left: 4px;
-  cursor: pointer; /*maozinha quando bota o dedo em cima*/
+  cursor: pointer;
 }
