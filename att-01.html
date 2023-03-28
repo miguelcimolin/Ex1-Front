@@ -4,7 +4,7 @@
     <head>
         <title>att1 Front</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css-all.css"/>
+        <link rel="stylesheet" href="styles.css"/>
     </head>
 
     <body>
@@ -18,7 +18,9 @@
                     <p class="chat-settings">Olá</p>
                 </div>
                 <div class="left-msg">
-                    <img class="img-settings" src="bomdia.jpeg" alt="Imagem de bom dia que toda avo ja mandou em algum grupo de familia">
+                    <div class="chat-settings">
+                        <img class="img-settings" src="bomdia.jpeg" alt="Imagem de bom dia que toda avo ja mandou em algum grupo de familia">
+                    </div>
                 </div>
                 <div class="right-msg">
                     <p class="chat-settings">Bom dia, Vózinha!</p>
@@ -37,7 +39,7 @@
                 </div>
             </div>
 
-            <form id="send-message-box" action="#" method="post">
+            <form id="send-message-box" method="post">
                 <input type="text" id="message" name="messages" class="msg-box" placeholder="Digite aqui...">
                 <button class="button" type="submit" onclick="adicionarMsg(document.getElementById('message').value)">ENVIAR</button>
             </form>
