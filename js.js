@@ -1,22 +1,22 @@
 function adicionarMsg(inputMessage) {
     if(inputMessage != ''){
-        const novoItem = document.createElement("p"); //cria a "base" da nova mensagem <p>
+        const novoItem = document.createElement("p");
         novoItem.innerHTML = `${inputMessage}`;
-        novoItem.className = 'chat-settings'; //busca o styles do css
+        novoItem.className = 'chat-settings';
 
-        const newComment = document.querySelector("#newMessages"); //usa append pra jogar dentro da div, selecionada pela classe
+        const newComment = document.querySelector("#newMessages");
         newComment.appendChild(novoItem);
         const box2 = document.querySelector('#box2');
-        box2.scrollTop = box2.scrollHeight; //faz a barra de scroll seguir
+        box2.scrollTop = box2.scrollHeight;
 
-        document.getElementById('message').value = '' //limpa o placeholder
+        document.getElementById('message').value = ''
     } else {
         alert('Digite uma mensagem valida.')
-        document.getElementById('message').value = '' //limpa o placeholder
+        document.getElementById('message').value = ''
     }
 }
 
-const formAdd = document.querySelector("#send-message-box"); //monitora o enter
+const formAdd = document.querySelector("#send-message-box");
 formAdd.addEventListener("submit", function(event) {
     event.preventDefault();
     if (True) {
